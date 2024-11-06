@@ -3,34 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter with Frames</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <div class="converter-container">
-        <h2>Currency Converter</h2>
-        <form id="converterForm">
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" value="1" required>
-
-            <label for="fromCurrency">From:</label>
-            <select id="fromCurrency">
-                <option value="USD">USD - American Dollar</option>
-                <option value="EUR">EUR - Euro</option>
-                <option value="GBP">GBP - British Pound</option>
-            </select>
-
-            <label for="toCurrency">To:</label>
-            <select id="toCurrency">
-                <option value="TRY">TRY - Turkish Lira</option>
-                <option value="INR">INR - Indian Rupee</option>
-                <option value="JPY">JPY - Japanese Yen</option>
-            </select>
-
-            <button type="button" onclick="convertCurrency()">Convert</button>
-        </form>
-        <p id="result"></p>
+    <header>
+        <h1>Currency Converter App</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="calculator.html" target="contentFrame">Currency Converter</a></li>
+            </ul>
+        </aside>
+        <iframe name="contentFrame" class="content-frame"></iframe>
     </div>
-    <script src="converter.js"></script>
+
+    <footer>
+        <p>&copy;2024 My Currency Converter.All rights reserved.</p>
+    </footer>
 </body>
 </html>

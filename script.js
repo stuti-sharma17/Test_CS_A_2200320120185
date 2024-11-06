@@ -1,11 +1,11 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+  function validate() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "user" && password === "password") { // Example credentials
-        window.location.href = "currency-converter.html"; // Redirect to the currency converter
+    if (username === "admin" && password === "admin") { 
+        window.location.href = "C:\Users\Lenovo\OneDrive\Desktop\FSD_Test\convertor.html";
     } else {
         alert("Invalid username or password.");
         event.preventDefault();
     }
-});
+};

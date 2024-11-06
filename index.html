@@ -8,15 +8,15 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
+        <h1>Login</h1>
+        <form  action="convertor.html" id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" onclick="validate()">Login</button>
         </form>
     </div>
     <script src="script.js"></script>
