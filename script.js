@@ -2,11 +2,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "" || password === "") {
-        alert("Please fill in all fields.");
-        event.preventDefault(); // Prevent form submission
+    if (username === "user" && password === "password") { // Example credentials
+        window.location.href = "currency-converter.html"; // Redirect to the currency converter
     } else {
-        // You can add further validation or proceed with form submission
-        alert("Login successful!");
+        alert("Invalid username or password.");
+        event.preventDefault();
     }
 });
